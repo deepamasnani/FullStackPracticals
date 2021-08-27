@@ -18,6 +18,14 @@ p {
   width: 100%;
   margin-top: 5%;
 }
+.ratio {
+  position: relative;
+  margin-top: 16px;
+  height: 30vh;
+  width: 20vw;
+  align-content: center;
+  border-radius: 15px;
+}
 
 .small {
   position: relative;
@@ -35,8 +43,7 @@ p {
   align-content: center;
   justify-content: center;
   text-align: center;
-  margin-right: 2%;
-  margin-left: 1%;
+  margin-left: 3%;
   border-radius: 15px;
   overflow: auto;
 }
