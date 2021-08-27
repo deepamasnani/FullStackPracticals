@@ -17,6 +17,7 @@ p {
   flex-wrap: wrap;
   width: 100%;
   margin-top: 5%;
+  margin-left: 2%;
 }
 .ratio {
   position: relative;
@@ -37,26 +38,27 @@ p {
 }
 .two {
   background-color: white;
-  height: 69vh;
+  height: 71vh;
   width: 21%;
   border: 1px solid white;
   align-content: center;
   justify-content: center;
   text-align: center;
-  margin-left: 3%;
+  margin-left: 1%;
   border-radius: 15px;
   overflow: auto;
+  margin-left: 2%;
 }
 @media only screen and (max-width: 450px) {
   .two {
     background-color: rgb(255, 255, 255);
-    height: 59vh;
-    width: 50%;
+    height: 77vh;
+    width: 100%;
     border: 1px solid white;
     align-content: center;
     justify-content: center;
     text-align: center;
-    margin-right: 2%;
+    margin-right: 4%;
     margin-left: 1%;
     margin-bottom: 2%;
     border-radius: 15px;
@@ -66,21 +68,19 @@ p {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    width: 190%;
-    margin-top: 5%;
   }
   .small {
     position: relative;
     margin-top: 16px;
     width: 80vw;
-    height: 30vh;
+    height: 35vh;
     align-content: center;
     border-radius: 15px;
   }
   .ratio {
     position: relative;
     margin-top: 16px;
-    height: 30vh;
+    height: 35vh;
     width: 80vw;
     align-content: center;
     border-radius: 15px;
