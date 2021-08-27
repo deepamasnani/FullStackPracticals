@@ -38,7 +38,7 @@ p {
 }
 .two {
   background-color: white;
-  height: 71vh;
+  height: 100%;
   width: 21%;
   border: 1px solid white;
   text-align: center;
@@ -46,6 +46,7 @@ p {
   border-radius: 15px;
   overflow: auto;
   margin-left: 2%;
+  padding-bottom: 1%;
 }
 @media only screen and (max-width: 450px) {
   .two {
