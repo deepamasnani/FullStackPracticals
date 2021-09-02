@@ -106,3 +106,44 @@ body {
   font-size: 18px;
   color: white;
 }
+@media only screen and (max-width: 450px) {
+  .circle {
+    border-radius: 50%;
+    height: 95px;
+    width: 95px;
+    margin-right: 5%;
+    background-color: rgb(253, 185, 95);
+  }
+  .artical {
+    margin-left: 50%;
+    width: 50%;
+    margin-bottom: 1%;
+    background-color: rgb(253, 124, 38);
+    height: 100px;
+  }
+  .box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin-right: 5%;
+  }
+  .sec {
+    margin-left: 43%;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+  #main {
+    padding-top: 150px;
+    margin-left: 25%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  .art {
+    padding-top: 45px;
+    margin-left: 35%;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+  }
+}
