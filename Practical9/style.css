@@ -275,6 +275,10 @@ button {
   border: none;
 }
 @media (min-width: 801px) and (max-width: 1199px) {
+  html {
+    scroll-padding-top: 150px;
+    scroll-behavior: smooth;
+  }
   #tech {
     margin-top: 680px;
   }
@@ -287,10 +291,11 @@ button {
     height: 100%;
     overflow: auto;
   }
+
   .box {
     background-color: rgb(255, 255, 255);
     height: 100%;
-    width: 100%;
+    width: 48%;
     border: 1px solid white;
     text-align: center;
     margin-left: -1.5%;
@@ -298,11 +303,10 @@ button {
     overflow: auto;
   }
   .box p {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.85rem;
   }
   button {
-    height: 3vh;
     width: 90%;
     font-size: 1.6rem;
     font-weight: 900;
@@ -313,12 +317,12 @@ button {
     flex-wrap: wrap;
   }
   #small {
-    width: 80vw;
-    height: 35vh;
+    width: 40vw;
+    height: 30vh;
   }
   #big {
-    height: 35vh;
-    width: 80vw;
+    height: 30vh;
+    width: 40vw;
   }
 
   #main-content {
@@ -393,9 +397,14 @@ button {
     font-size: 40px;
     color: white;
   }
+  #nav-bar li {
+    padding-bottom: 13px;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
   #header {
     justify-content: left;
-    width: 96.5vw;
+    width: 96.3%;
   }
   #footer {
     width: 98%;
@@ -517,9 +526,7 @@ button {
     display: none;
   }
   #header {
-    position: fixed;
-    justify-content: left;
-    width: 94.4%;
+    width: 96.2%;
   }
   #main {
     margin-top: -1%;
@@ -651,11 +658,11 @@ button {
     display: none;
   }
   #header {
-    width: 96.5vw;
+    width: 96.3%;
   }
   #main {
-    margin-top: -3%;
-    margin-left: -4%;
+    margin-top: -2%;
+    margin-left: -2%;
     width: 40px;
     height: 50px;
     transition: margin-left 0.5s;
