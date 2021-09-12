@@ -20,20 +20,15 @@ body {
 #banner {
   margin-top: 6%;
   width: 100%;
-  height: 500px;
+  height: 650px;
   background-image: url("https://i.imgur.com/qIxEnMl.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
-  width: 100%;
-}
-#banner img {
-  background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  height: 500px;
-  width: 100%;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
 }
+
 #para {
   font-size: 20px;
   margin-top: 8px;
@@ -63,7 +58,7 @@ body {
   margin-top: 13%;
   text-align: center;
   font-family: sans-serif;
-  font-size: 23px;
+  font-size: 40px;
 }
 
 #sec2 {
@@ -120,20 +115,17 @@ body {
   height: 100%;
   width: 22%;
   background-color: rgb(211, 208, 208);
-  border-radius: 15px;
 }
 #big {
   height: 30vh;
   width: 21.5vw;
   align-content: center;
-  border-radius: 15px;
 }
 
 #small {
   width: 21.5vw;
   height: 30vh;
   align-content: center;
-  border-radius: 15px;
 }
 .box p {
   font-size: 1rem;
@@ -162,6 +154,7 @@ body {
   color: white;
   font-family: sans-serif;
   font-size: 20px;
+  border: none;
 }
 .art {
   text-align: center;
@@ -207,12 +200,11 @@ button {
   border-radius: 8px;
   height: 2rem;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 900;
   cursor: pointer;
 }
-button:hover {
-  box-shadow: 0 0 5px rgb(0, 0, 0);
-}
+
 .red {
   background-color: red;
 }
@@ -231,7 +223,7 @@ button:hover {
 }
 .sidebar {
   height: 50%;
-  width: 0;
+  width: 0%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -273,16 +265,16 @@ button:hover {
 }
 
 .openbtn:hover {
-  background-color: #444;
+  border: none;
 }
 
 #main {
   transition: margin-left 0.5s;
   padding: 16px;
   display: none;
+  border: none;
 }
-
-@media only screen and (max-width: 450px) {
+@media (min-width: 801px) and (max-width: 1199px) {
   #tech {
     margin-top: 680px;
   }
@@ -303,7 +295,137 @@ button:hover {
     text-align: center;
     margin-left: -1.5%;
     margin-bottom: 2%;
-    border-radius: 15px;
+    overflow: auto;
+  }
+  .box p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  button {
+    height: 3vh;
+    width: 90%;
+    font-size: 1.6rem;
+    font-weight: 900;
+  }
+  #one {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #small {
+    width: 80vw;
+    height: 35vh;
+  }
+  #big {
+    height: 35vh;
+    width: 80vw;
+  }
+
+  #main-content {
+    width: 97.9%;
+    background-color: rgb(138, 136, 136);
+    height: 102%;
+    overflow: auto;
+  }
+  #aboutproject {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+  }
+  #sec2 {
+    height: 550px;
+    width: 100%;
+    display: block;
+  }
+  #horcard {
+    margin-left: -2.5%;
+    margin-top: -2.2%;
+    width: 97.5%;
+    height: 100.5%;
+  }
+
+  .artical {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    background-color: black;
+    height: 30%;
+  }
+  #img1 {
+    background-image: url(https://imgur.com/JyMz0CR.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #img2 {
+    background-image: url(https://imgur.com/GFLWoXM.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #img3 {
+    background-image: url(https://imgur.com/uzmZqZA.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #banner {
+    background-image: url(https://imgur.com/qIxEnMl.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #team {
+    margin-left: -9%;
+  }
+  #container-circle {
+    margin-left: -1%;
+    width: 94%;
+  }
+  .circle {
+    margin-left: 5%;
+  }
+  #aboutus {
+    margin-left: -8%;
+  }
+  #banner {
+    width: 97.5%;
+    height: 400px;
+    margin-bottom: 15px;
+    display: flex;
+    font-size: 40px;
+    color: white;
+  }
+  #header {
+    justify-content: left;
+    width: 96.5vw;
+  }
+  #footer {
+    width: 98%;
+    height: 150px;
+  }
+  #footer p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #tech {
+    margin-top: 680px;
+  }
+  #sec3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 2.2%;
+    height: 100%;
+    overflow: auto;
+  }
+  .box {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+    margin-left: -1.5%;
+    margin-bottom: 2%;
     overflow: auto;
   }
   button {
@@ -317,12 +439,10 @@ button:hover {
   #small {
     width: 80vw;
     height: 35vh;
-    border-radius: 15px;
   }
   #big {
     height: 35vh;
     width: 80vw;
-    border-radius: 15px;
   }
   #sec2 {
     height: 600px;
@@ -397,15 +517,153 @@ button:hover {
     display: none;
   }
   #header {
+    position: fixed;
     justify-content: left;
-    width: 94%;
+    width: 94.4%;
   }
   #main {
+    margin-top: -1%;
+    margin-left: 1%;
     width: 40px;
-    margin-left: -3%;
     height: 50px;
     transition: margin-left 0.5s;
     display: block;
+    border: none;
+  }
+  .openbtn {
+    font-size: 2rem;
+  }
+
+  #footer {
+    width: 98%;
+  }
+}
+
+@media (max-width: 625px) {
+  #tech {
+    margin-top: 680px;
+  }
+  #sec3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 2.2%;
+    height: 100%;
+    overflow: auto;
+  }
+  .box {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+    margin-left: -1.5%;
+    margin-bottom: 2%;
+    overflow: auto;
+  }
+  button {
+    width: 90%;
+  }
+  #one {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #small {
+    width: 80vw;
+    height: 35vh;
+  }
+  #big {
+    height: 35vh;
+    width: 80vw;
+  }
+  #sec2 {
+    height: 600px;
+    width: 100%;
+    display: block;
+  }
+  #horcard {
+    margin-left: -2.5%;
+    margin-top: -2.2%;
+    width: 97.5%;
+    height: 100.5%;
+  }
+  #main-content {
+    width: 97.9%;
+    background-color: rgb(138, 136, 136);
+    height: 102%;
+    overflow: auto;
+  }
+  .artical {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    background-color: black;
+    height: 30%;
+  }
+  #img1 {
+    background-image: url(https://imgur.com/JyMz0CR.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #img2 {
+    background-image: url(https://imgur.com/GFLWoXM.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #img3 {
+    background-image: url(https://imgur.com/uzmZqZA.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #banner {
+    background-image: url(https://imgur.com/qIxEnMl.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #team {
+    margin-left: -9%;
+  }
+  #container-circle {
+    margin-left: -1%;
+  }
+  #aboutus {
+    margin-left: -8%;
+  }
+  #banner {
+    width: 97.5%;
+    height: 400px;
+    margin-bottom: 15px;
+    display: flex;
+    font-size: 40px;
+    color: white;
+  }
+
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+
+  #nav-bar {
+    display: none;
+  }
+  #header {
+    width: 96.5vw;
+  }
+  #main {
+    margin-top: -3%;
+    margin-left: -4%;
+    width: 40px;
+    height: 50px;
+    transition: margin-left 0.5s;
+    display: block;
+    border: none;
+  }
+  .openbtn {
+    font-size: 2rem;
   }
 
   #footer {
